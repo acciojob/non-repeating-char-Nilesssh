@@ -1,5 +1,5 @@
 
-let str = prmpt("Enter your String");
+let str = prompt("Enter your String");
 
 if(str === "abcabcdbca"){
 	alert('d');
