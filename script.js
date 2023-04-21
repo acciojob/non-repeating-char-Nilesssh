@@ -1,15 +1,15 @@
+let str = prompt("enter your string");
 
-let str = prompt("Enter your String");
+let arr = str.split("");
 
-if(str === "abcabcdbca"){
-	alert('d');
-}
-for(let i=0; i<str.length-1; i++){
-	if(str[i]!=str[i+1]){
-		 alert(str[i]);
-	}else{
-		
-		i++;
-		
+for(let i=0; i<arr.length; i++){
+	let count = 0;
+	for(let j=0; j<arr.length; j++){
+		if(arr[i]===arr[j]){
+			count++;
+		}
+	}
+	if(count===1){
+		alert(str[i]);
 	}
 }
